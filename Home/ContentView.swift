@@ -9,13 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            
+            //background
+            LinearGradient(
+                gradient: <#T##Gradient#>,
+                startPoint: <#T##UnitPoint#>,
+                endPoint: <#T##UnitPoint#>
+            )
+            .ignoresSafeArea()
+            
+            //foreground
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Hello, world!")
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
